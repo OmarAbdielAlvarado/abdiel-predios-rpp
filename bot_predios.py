@@ -14,7 +14,7 @@ def tg(met, **kw):
 def dueno(lat, lon):
     if os.environ.get("DEMO") == "1":
         import csv
-        ruta = os.path.join(os.path.dirname(__file__), "mexsim_clientes_demo.csv")
+        ruta = os.path.join(os.path.dirname(__file__), "datos_demo.csv")
         filas = list(csv.DictReader(open(ruta, encoding="utf-8-sig")))
         best, bd = None, 9e9
         for p in filas:
