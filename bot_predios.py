@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # AbdielBusca_Bot: ubicacion -> /buscar_predio_cercano (form) -> dueno. Grupos: solo log.
 import os, json, time, urllib.request, urllib.parse
-TOKEN = os.environ["TG_BOT_TOKEN"]  # ROTAR (expuesto)
+TOKEN = os.environ["TG_BOT_TOKEN"]
 API = f"https://api.telegram.org/bot{TOKEN}"
 EP = "http://localhost:5001/buscar_predio_cercano"
 ALLOWED = {int(x) for x in os.environ.get("TG_CHAT_IDS", "").replace(" ", "").split(",") if x}
